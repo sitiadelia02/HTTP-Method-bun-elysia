@@ -1,7 +1,9 @@
 import { Elysia } from "elysia";
-import mahasiswa from "./mahasiswa";
+import mahasiswa from "./routes/mahasiswa";
+import { produkRoute } from "./routes/produk";
 
 const app = new Elysia();
+app.use(produkRoute);
 
 // ====================
 // GET
